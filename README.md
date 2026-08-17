@@ -446,8 +446,6 @@ Then enter the project directory:
 cd cantordust_task1
 ```
 
-Replace `<YOUR_GITHUB_REPOSITORY_URL>` with the actual GitHub repository URL.
-
 ### 2. Create a virtual environment
 
 On Windows:
