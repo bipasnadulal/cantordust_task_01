@@ -1,0 +1,8 @@
+langgraph
+langchain-core
+pydantic
+groq
+python-dotenv
+pymupdf
+pdfplumber
+pytest

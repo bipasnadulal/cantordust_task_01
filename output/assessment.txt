@@ -1,0 +1,403 @@
+============================================================
+INVERTER DATASHEET ASSESSMENT
+============================================================
+
+Target Model: SUN-5K-G06P3-EU-AM2-P1
+
+------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------
+
+Product: SUN-5K-G06P3-EU-AM2-P1. Compared 47 specification fields across 2 source documents. 7 fields agree. 9 fields conflict. 18 fields appear only in source 1. 13 fields appear only in source 2. 41 item(s) require human review. Overall assessment status: conflict.
+
+------------------------------------------------------------
+CHECKLIST COVERAGE
+------------------------------------------------------------
+
+FieldCategory.PRODUCT_IDENTITY: ADDRESSED (1 evidence field(s))
+  Note: Target model/variant is identified; model-code differences are surfaced for review.
+FieldCategory.MANUFACTURER_IDENTITY: ADDRESSED (0 evidence field(s))
+  Note: Manufacturer identity is part of the source evidence; verify legal/factory details against the final supplier documents.
+FieldCategory.TEST_EVIDENCE: ADDRESSED (2 evidence field(s))
+  Note: Standards/compliance claims are extracted where present. Actual test certificates are not included in the datasheets and must be requested.
+FieldCategory.LABELING: ADDRESSED (0 evidence field(s))
+  Note: Label-relevant information such as model, ratings and ingress protection is reported. Physical nameplate artwork/photos are not provided.
+FieldCategory.IMPORTER_PAPERWORK: ADDRESSED (0 evidence field(s))
+  Note: Importer-side customs/commercial paperwork is outside the supplied datasheets and is explicitly flagged as follow-up.
+
+Overall Status: conflict
+
+------------------------------------------------------------
+REVIEW ITEMS
+------------------------------------------------------------
+
+[1]
+field_name: model
+category: FieldCategory.PRODUCT_IDENTITY
+priority: ReviewPriority.CRITICAL
+status: ReconciliationStatus.CONFLICT
+description: The two source documents identify the product with different model codes: source 1 uses 'SUN-5K-G06P3-EU-AM2-P1' and source 2 uses 'SUN-5K-G06P3-EU-AM2'. This may mean the two documents describe different variants of the same base product rather than an identical part.
+recommendation: Confirm with the manufacturer/SunBridge whether these codes represent the same shippable unit or genuinely different variants before relying on either datasheet as authoritative for compliance.
+evidence: []
+
+[2]
+field_name: rated_output_voltage_range_v
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'rated_output_voltage_range_v' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'TABLE ROW 6', 'source_text': '7.6/7.3 | 9.1/8.7 | 10.7/10.2 | 12.2/11.6 | 15.2/14.5 | 18.2/17.4'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Rated Output Voltage/Range (V)'}]
+
+[3]
+field_name: cooling_concept
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'cooling_concept' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Cooling Concept Free Cooling'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Type of Cooling'}]
+
+[4]
+field_name: ingress_protection
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'ingress_protection' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Ingress Protection IP65'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Ingress Protection(IP) Rating'}]
+
+[5]
+field_name: permissible_altitude_m
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'permissible_altitude_m' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Permissible Altitude (m) 4000'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Permissible Altitude (m)'}]
+
+[6]
+field_name: weight_kg
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'weight_kg' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Weight (kg) 11'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Weight (kg)'}]
+
+[7]
+field_name: communication_interface
+category: FieldCategory.INTERFACE
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'communication_interface' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Features', 'source_text': 'Interface RS485/RS232/Wiﬁ/LAN'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Interface', 'source_text': 'Communication Interface'}]
+
+[8]
+field_name: euro_ef_ciency
+category: FieldCategory.PERFORMANCE
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'euro_ef_ciency' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'TABLE ROW 9', 'source_text': '98.2% | 98.3%'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Euro Efﬁciency'}]
+
+[9]
+field_name: grid_connection_standard
+category: FieldCategory.STANDARDS
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'grid_connection_standard' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Grid Connection Standard IEC 61727, IEC 62116, EN 50549'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Standards', 'source_text': 'Grid Regulation'}]
+
+[10]
+field_name: safety_emc_standard
+category: FieldCategory.STANDARDS
+priority: ReviewPriority.HIGH
+status: ReconciliationStatus.CONFLICT
+description: The value for 'safety_emc_standard' differs between the two source documents.
+recommendation: Review both source documents and determine whether the difference represents a product revision, specification change, or extraction issue.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Safety / EMC Standard IEC/EN 61000-6-1/2/3/4, IEC/EN 62109-1, IEC/EN 62109-2'}, {'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Standards', 'source_text': 'Safety EMC/Standard'}]
+
+[11]
+field_name: max_ac_output_apparent_power_kva
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'max_ac_output_apparent_power_kva' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Max. AC Output Apparent Power (kVA)'}]
+
+[12]
+field_name: max_active_power_kw
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'max_active_power_kw' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'TABLE ROW 5', 'source_text': '5.5 | 6.6 | 7.7 | 8.8 | 11 | 13.2'}]
+
+[13]
+field_name: max_dc_input_power_kw
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'max_dc_input_power_kw' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'TABLE ROW 2', 'source_text': '6.5 | 7.8 | 9.1 | 10.4 | 13 | 15.6'}]
+
+[14]
+field_name: max_input_short_circuit_current_a
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'max_input_short_circuit_current_a' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Max. Input Short Circuit Current (A)'}]
+
+[15]
+field_name: max_operating_pv_input_current_a
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'max_operating_pv_input_current_a' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Max. Operating PV Input Current (A)'}]
+
+[16]
+field_name: max_pv_input_power_kw
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'max_pv_input_power_kw' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Max. PV Input Power (kW)'}]
+
+[17]
+field_name: max_pv_input_voltage_v
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'max_pv_input_voltage_v' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Max. PV Input Voltage (V)'}]
+
+[18]
+field_name: mppt_voltage_range_v
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'mppt_voltage_range_v' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'MPPT Voltage Range (V)'}]
+
+[19]
+field_name: no_of_mpp_trackers
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'no_of_mpp_trackers' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 1, 'section': 'PAGE TEXT', 'source_text': '2 MPP trackers, Max. efﬁciency up to 98.5%'}]
+
+[20]
+field_name: no_of_mpp_trackers_no_of_strings_per_mpp_tracker
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'no_of_mpp_trackers_no_of_strings_per_mpp_tracker' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'PV String Input Data', 'source_text': 'No. of MPP Trackers/No. of Strings per MPP Tracker'}]
+
+[21]
+field_name: rated_ac_output_active_power_kw
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'rated_ac_output_active_power_kw' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Rated AC Output Active Power (kW)'}]
+
+[22]
+field_name: rated_output_power_kw
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'rated_output_power_kw' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'TABLE ROW 4', 'source_text': '5 | 6 | 7 | 8 | 10 | 12'}]
+
+[23]
+field_name: rated_pv_input_voltage_v
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'rated_pv_input_voltage_v' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Rated PV Input Voltage (V)'}]
+
+[24]
+field_name: start_up_voltage_v
+category: FieldCategory.ELECTRICAL
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'start_up_voltage_v' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'Start-up Voltage (V)'}]
+
+[25]
+field_name: cabinet_size_wxhxd_mm
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'cabinet_size_wxhxd_mm' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Cabinet Size (WxHxD mm) 283×463×178 (Excluding connectors and brackets)'}]
+
+[26]
+field_name: integrated_dc_switch
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'integrated_dc_switch' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Integrated DC Switch Yes'}]
+
+[27]
+field_name: internal_consumption
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'internal_consumption' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Internal Consumption <1W (Night)'}]
+
+[28]
+field_name: noise_db
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'noise_db' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Noise (dB)'}]
+
+[29]
+field_name: noise_emission_typical
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'noise_emission_typical' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Noise Emission (Typical) <45 dB'}]
+
+[30]
+field_name: operating_temperature_range
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'operating_temperature_range' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Running Temperature -25 to +60℃, >45℃ Derating'}]
+
+[31]
+field_name: operating_temperature_range_c
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'operating_temperature_range_c' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Operating Temperature Range (°C)'}]
+
+[32]
+field_name: topology
+category: FieldCategory.GENERAL_DATA
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'topology' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'General Data', 'source_text': 'Topology Transformerless'}]
+
+[33]
+field_name: display
+category: FieldCategory.INTERFACE
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'display' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Features', 'source_text': 'Display LCD1602'}]
+
+[34]
+field_name: remote_operating_parameter_change
+category: FieldCategory.INTERFACE
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'remote_operating_parameter_change' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Features', 'source_text': 'Remote Change of Operating Parameters Yes'}]
+
+[35]
+field_name: remote_software_upload
+category: FieldCategory.INTERFACE
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'remote_software_upload' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Features', 'source_text': 'Remote Software Upload Yes'}]
+
+[36]
+field_name: anti_islanding_protection
+category: FieldCategory.PROTECTION
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'anti_islanding_protection' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Protection', 'source_text': 'Anti-islanding Protection Yes'}]
+
+[37]
+field_name: dc_injection_current
+category: FieldCategory.PROTECTION
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_2_ONLY
+description: 'dc_injection_current' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-15k-g06p3-eu-am2_240318_en.pdf', 'page_number': 2, 'section': 'Technical Data', 'source_text': 'DC Injection Current'}]
+
+[38]
+field_name: dc_reverse_polarity_protection
+category: FieldCategory.PROTECTION
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'dc_reverse_polarity_protection' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Protection', 'source_text': 'DC Reverse-Polarity Protection Yes'}]
+
+[39]
+field_name: ground_fault_monitoring
+category: FieldCategory.PROTECTION
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'ground_fault_monitoring' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Protection', 'source_text': 'Ground Fault Monitoring Yes'}]
+
+[40]
+field_name: insulation_resistance_protection
+category: FieldCategory.PROTECTION
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'insulation_resistance_protection' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Protection', 'source_text': 'Insulation Resistance Protection Yes'}]
+
+[41]
+field_name: surge_protection
+category: FieldCategory.PROTECTION
+priority: ReviewPriority.LOW
+status: ReconciliationStatus.SOURCE_1_ONLY
+description: 'surge_protection' appears in only one of the two source documents.
+recommendation: Check whether the specification was removed, added, renamed, or omitted in the other document.
+evidence: [{'document_name': 'datasheet_sun-4-12k-g06p3-eu-am2-p1_231007_en.pdf', 'page_number': 2, 'section': 'Features', 'source_text': 'Surge Protection No'}]
+
+============================================================
