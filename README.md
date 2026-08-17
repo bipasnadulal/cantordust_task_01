@@ -456,19 +456,27 @@ python -m venv .venv
 
 ### 3. Activate the virtual environment
 
+```bash
 .venv\Scripts\Activate.ps1
+```
 
 After activation, the terminal should show something similar to:
 
+```bash
 (.venv) PS C:...\cantordust_task1>
+```
 
 If PowerShell blocks activation, you can use:
 
+```bash
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 
 and then activate again:
 
+```bash
 .venv\Scripts\Activate.ps1
+```
 
 ### Install dependencies
 
